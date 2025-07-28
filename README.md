@@ -22,16 +22,11 @@ Este projeto implementa um interpretador de linha de comando com suporte a:
 - `execvp()` — Execução de comandos digitados
 - `waitpid()` — Espera pela finalização dos processos filhos
 
-## Como Executar no Windows
+## Como Executar
+
+### 🪟 No Windows (com WSL)
 
 > ⚠️ Este projeto exige um ambiente Unix-like. No Windows, é necessário usar WSL ou uma máquina virtual com Linux.
-
-### Requisitos
-
-- GCC (Linux, WSL ou MinGW compatível com POSIX)
-- Terminal Unix (ex: bash, zsh)
-
-### Passo a passo com WSL
 
 1. Instale o WSL com Ubuntu ou Debian
 2. Coloque o `main.c` em uma pasta acessível
@@ -40,6 +35,18 @@ Este projeto implementa um interpretador de linha de comando com suporte a:
    gcc main.c -o interpretador
    ```
 4. Execute com:
+   ```bash
+   ./interpretador
+   ```
+
+### 🐧 No Linux
+
+1. Abra o terminal e vá até a pasta onde está o `main.c`
+2. Compile o código com:
+   ```bash
+   gcc main.c -o interpretador
+   ```
+3. Execute o interpretador com:
    ```bash
    ./interpretador
    ```
